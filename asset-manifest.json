@@ -1,0 +1,23 @@
+{
+  "files": {
+    "main.css": "/ax920.github.io/static/css/main.5f361e03.chunk.css",
+    "main.js": "/ax920.github.io/static/js/main.3405d1ec.chunk.js",
+    "main.js.map": "/ax920.github.io/static/js/main.3405d1ec.chunk.js.map",
+    "runtime-main.js": "/ax920.github.io/static/js/runtime-main.07d39a82.js",
+    "runtime-main.js.map": "/ax920.github.io/static/js/runtime-main.07d39a82.js.map",
+    "static/js/2.4d7dd6b7.chunk.js": "/ax920.github.io/static/js/2.4d7dd6b7.chunk.js",
+    "static/js/2.4d7dd6b7.chunk.js.map": "/ax920.github.io/static/js/2.4d7dd6b7.chunk.js.map",
+    "index.html": "/ax920.github.io/index.html",
+    "precache-manifest.78392a233a141981925d802ed49739b4.js": "/ax920.github.io/precache-manifest.78392a233a141981925d802ed49739b4.js",
+    "service-worker.js": "/ax920.github.io/service-worker.js",
+    "static/css/main.5f361e03.chunk.css.map": "/ax920.github.io/static/css/main.5f361e03.chunk.css.map",
+    "static/js/2.4d7dd6b7.chunk.js.LICENSE.txt": "/ax920.github.io/static/js/2.4d7dd6b7.chunk.js.LICENSE.txt",
+    "static/media/logo.svg": "/ax920.github.io/static/media/logo.5d5d9eef.svg"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.07d39a82.js",
+    "static/js/2.4d7dd6b7.chunk.js",
+    "static/css/main.5f361e03.chunk.css",
+    "static/js/main.3405d1ec.chunk.js"
+  ]
+}
