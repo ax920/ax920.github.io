@@ -1,0 +1,79 @@
+.App {
+  text-align: center;
+  background-color: #a5c0d2;
+  overflow-x: hidden;
+  min-height: 100vh;
+}
+
+.App-header {
+  background-color: #a5c0e1;
+  height: 10vh;
+  width: 100%;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  font-size: calc(10px + 2vmin);
+}
+
+a:hover {
+  opacity: 0.50;
+}
+
+a:active {
+  color: white;
+}
+
+body {
+  padding-bottom: 200px;
+  background-color: #a5c0d2;
+}
+
+#resume-link-wrapper {
+  grid-column: 3;
+}
+
+#resume-link {
+  display: block;
+  padding-left: 17em;
+  padding-top: 1em;
+  font-size: 20px;
+  text-decoration: none;
+  color: black;
+  font-weight: 300;
+}
+
+.background {
+  background-color: #a5c0d2;
+}
+
+#blurb-description {
+  font-family: 'Roboto', sans-serif;
+  font-weight: 300;
+}
+
+.profile-photo {
+  border-radius: 50%;
+  width: 25%;
+  height: 25%;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.roboto {
+  font-family: 'Roboto', sans-serif;
+}
+
+/* Sample animation css for spinning React logo */
+/* @media (prefers-reduced-motion: no-preference) {
+  .App-logo {
+    animation: App-logo-spin infinite 20s linear;
+  }
+} */
+
+/* @keyframes App-logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+} */
