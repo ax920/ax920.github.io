@@ -1,0 +1,114 @@
+.App {
+  text-align: center;
+  background-color: #a5c0d2;
+  overflow-x: hidden;
+  min-height: 100vh;
+}
+
+body {
+  padding-bottom: 200px;
+  background-color: #a5c0d2;
+}
+
+.background {
+  background-color: #a5c0d2;
+}
+
+#blurb-description {
+  font-family: 'Roboto', sans-serif;
+  font-weight: 300;
+}
+
+.profile-photo {
+  border-radius: 50%;
+  width: 25%;
+  height: 25%;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.roboto {
+  font-family: 'Roboto', sans-serif;
+}
+
+#resume-iframe {
+  width: 53vw;
+  height: 142.5vh;
+  margin-left: auto;
+  margin-right: auto;
+  display: block;
+  overflow: hidden;
+}
+
+.App-header {
+  /* background-color: #a5c0e1; */
+  height: 10vh;
+  width: 100%;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  font-size: calc(10px + 2vmin);
+}
+
+.home-link-wrapper {
+  grid-column: 1;
+  display: inline-block;
+}
+
+.home-link {
+  padding-right: 18em;
+  font-size: 20px;
+  text-decoration: none;
+  /* color: black; */
+  font-weight: 300;
+}
+
+.resume-link-wrapper {
+  grid-column: 3;
+  display: inline-block;
+}
+
+.resume-link {
+  padding-left: 17em;
+  font-size: 20px;
+  text-decoration: none;
+  font-weight: 300;
+  /* border-bottom: 1px solid #a9aaa7 */
+}
+
+a {
+    text-decoration: none;
+    color: black;
+}
+
+a:hover {
+  opacity: 0.50;
+}
+
+a:active {
+  color: white;
+}
+
+.social-media-icon {
+  width: 1.75%;
+  height: 1.75%;
+}
+
+span + span {
+  margin-left: 10px;
+}
+
+/* Sample animation css for spinning React logo */
+/* @media (prefers-reduced-motion: no-preference) {
+  .App-logo {
+    animation: App-logo-spin infinite 20s linear;
+  }
+} */
+
+/* @keyframes App-logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+} */

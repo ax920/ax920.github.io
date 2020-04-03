@@ -1,0 +1,51 @@
+.App-header {
+    /* background-color: #a5c0e1; */
+    height: 10vh;
+    width: 100%;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    font-size: calc(10px + 2vmin);
+  }
+
+  .home-link-wrapper {
+    grid-column: 1;
+    display: inline-block;
+  }
+  
+  .home-link {
+    padding-right: 18em;
+    font-size: 20px;
+    text-decoration: none;
+    /* color: black; */
+    font-weight: 300;
+  }
+  
+  .resume-link-wrapper {
+    grid-column: 3;
+    display: inline-block;
+  }
+  
+  .resume-link {
+    padding-left: 17em;
+    font-size: 20px;
+    text-decoration: none;
+    font-weight: 200;
+    /* border-bottom: 1px solid #a9aaa7 */
+  }
+
+  .roboto {
+    font-family: 'Roboto', sans-serif;
+  }
+
+  a {
+      text-decoration: none;
+      color: black;
+  }
+
+  a:hover {
+    opacity: 0.50;
+  }
+  
+  a:active {
+    color: white;
+  }
