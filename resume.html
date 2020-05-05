@@ -4,17 +4,22 @@
 <head>
     <link rel="stylesheet" href="styles.css">
     <link rel="stylesheet" href="header.css">
+    <link rel="stylesheet" href="resume.css">
 </head>
 
-<div style="text-align: center;">
+<script>
 
-    <body className="background">
+</script>
+
+<div style="text-align: center; height: 100%;">
+
+    <body class="background">
         <!-- HEADER -->
         <header class="App-header">
             <div class="home-link-wrapper">
                 <div>
                     <p class="home-link">
-                        <a class="robot" href="./index">Home</a>
+                        <a class="roboto" href="./index.html">Home</a>
                     </p>
                 </div>
             </div>
@@ -22,19 +27,12 @@
             <div class="resume-link-wrapper">
                 <div>
                     <p class="resume-link">
-                        <a class="roboto" href="./resume">Resume</a>
+                        <a class="roboto" href="./resume.html">Resume</a>
                     </p>
                 </div>
             </div>
         </header>
         <!-- END HEADER -->
-        <div>
-            <div>
-                <iframe id="resume-iframe"
-                    src="https://docs.google.com/gview?url=http://github.com/ax920/files/raw/master/Resume.pdf&embedded=true"
-                    frameBorder="0">
-                </iframe>
-            </div>
-        </div>
+        <embed class="pdf-box" src="images/Resume.pdf" type="application/pdf" />
     </body>
 </div>

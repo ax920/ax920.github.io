@@ -4,7 +4,20 @@
 <head>
     <link rel="stylesheet" href="styles.css">
     <link rel="stylesheet" href="header.css">
+    <link rel="stylesheet" href="projects.css">
 </head>
+
+<script>
+    document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+        anchor.addEventListener('click', function (e) {
+            e.preventDefault();
+
+            document.querySelector(this.getAttribute('href')).scrollIntoView({
+                behavior: 'smooth'
+            });
+        });
+    });
+</script>
 
 <body>
     <div class="App">
@@ -14,7 +27,7 @@
                 <div class="home-link-wrapper">
                     <div>
                         <p class="home-link">
-                            <a class="roboto" href="./index">Home</a>
+                            <a class="roboto" href="./index.html">Home</a>
                         </p>
                     </div>
                 </div>
@@ -22,7 +35,7 @@
                 <div class="resume-link-wrapper">
                     <div>
                         <p class="resume-link">
-                            <a class="roboto" href="./resume">Resume</a>
+                            <a class="roboto" href="./resume.html">Resume</a>
                         </p>
                     </div>
                 </div>
@@ -52,6 +65,18 @@
                 </span>
             </div>
             <!-- END SOCIALMEDIA -->
+            <!-- BEGIN PROJECTS-->
+            <div id="project-wrapper">
+                <h2>TypeMeNot</h2>
+                <h4 class="align-left">Try it out for yourself!</h4>
+                <h4 class="align-left">Download instructions:</h4>
+                <ol>
+                    <li>Download the extension
+                        <a href="./images/Resume.pdf" download> here</a>
+                    </li>
+                </ol>
+            </div>
+            <!-- END PROJECTS-->
         </div>
     </div>
 </body>

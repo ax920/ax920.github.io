@@ -6,7 +6,6 @@
 }
 
 body {
-  padding-bottom: 200px;
   background-color: #a5c0d2;
 }
 
@@ -29,15 +28,6 @@ body {
 
 .roboto {
   font-family: 'Roboto', sans-serif;
-}
-
-#resume-iframe {
-  width: 53vw;
-  height: 142.5vh;
-  margin-left: auto;
-  margin-right: auto;
-  display: block;
-  overflow: hidden;
 }
 
 .App-header {

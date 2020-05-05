@@ -1,0 +1,23 @@
+#project-wrapper {
+    margin-top: 10vh;
+    margin-left: 20vh;
+    margin-right: 20vh;
+    padding-left: 5vh;
+    padding-right: 5vh;
+    border: 1px solid;
+    border-color: black;
+    border-radius: 5%;
+    height: 100vw;
+}
+
+.align-left {
+    text-align: left;
+}
+
+li {
+    text-align: left;
+}
+
+a {
+    text-decoration: underline;
+}
