@@ -1,17 +1,45 @@
 #project-wrapper {
     margin-top: 10vh;
-    margin-left: 20vh;
-    margin-right: 20vh;
+    margin-left: 40vh;
+    margin-right: 40vh;
     padding-left: 5vh;
     padding-right: 5vh;
+    /* border: 1px solid;
+    border-color: black; */
+    height: 100vw;
+}
+
+#text-wrapper {
+    width: 70%;
     border: 1px solid;
     border-color: black;
-    border-radius: 5%;
-    height: 100vw;
+    float: left;
+}
+
+#typemenot-gif {
+    width: 20%;
+    border: 1px solid;
+    border-color: black;
+    float: right;
 }
 
 .align-left {
     text-align: left;
+}
+
+.project-title {
+    text-align: left;
+    font-size: 4em;
+}
+
+.project-description {
+    color: #495057;
+    font-weight: 400;
+    font-size: 1.5em;
+}
+
+.description-wrapper {
+
 }
 
 li {

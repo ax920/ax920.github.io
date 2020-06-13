@@ -26,40 +26,36 @@
             <header class="App-header">
                 <div class="home-link-wrapper">
                     <div>
-                        <p class="home-link">
-                            <a class="roboto" href="./index.html">Home</a>
-                        </p>
+                        <a class="segoe home-link" href="./index.html">Home</a>
                     </div>
                 </div>
                 <div></div>
                 <div class="resume-link-wrapper">
                     <div>
-                        <p class="resume-link">
-                            <a class="roboto" href="./resume.html">Resume</a>
-                        </p>
+                        <a class="segoe resume-link"  href="./resume.html">Resume</a>
                     </div>
                 </div>
             </header>
             <!-- END HEADER -->
             <br></br>
             <img class="profile-photo" src="./images/alvin_profile.png" alt="Avatar"></img>
-            <h1 class="roboto" style="color: black;">Alvin Xu</h1>
-            <h4 id="blurb-description" class="roboto" style="color: black;">Computer Science Student at the
+            <h1 class="segoe name" style="color: black;">Alvin Xu</h1>
+            <h4 id="blurb-description" class="segoe" style="color: black;">Computer Science Student at the
                 University of British Columbia</h4>
             <!--<SocialMedia-->
             <div>
                 <span>
-                    <a href="https://www.linkedin.com/in/ax920/">
+                    <a class="remove-link" href="https://www.linkedin.com/in/ax920/">
                         <img class="social-media-icon" src="./images/icons/linkedin.png"></img>
                     </a>
                 </span>
                 <span>
-                    <a href="https://github.com/ax920/">
+                    <a class="remove-link" href="https://github.com/ax920/">
                         <img class="social-media-icon" src="./images/icons/github.png"></img>
                     </a>
                 </span>
                 <span>
-                    <a href="mailto:alvin.xu@alumni.ubc.ca">
+                    <a class="remove-link" href="mailto:alvin.xu@alumni.ubc.ca">
                         <img class="social-media-icon" src="./images/icons/mail.png"></img>
                     </a>
                 </span>
@@ -67,20 +63,34 @@
             <!-- END SOCIALMEDIA -->
             <!-- BEGIN PROJECTS-->
             <div id="project-wrapper">
-                <h2>TypeMeNot</h2>
-                <h4 class="align-left">Try it out for yourself!</h4>
-                <h4 class="align-left">Download instructions:</h4>
-                <ol>
-                    <li>Download the extension
-                        <a href="./images/Resume.pdf" download> here</a>
-                    </li>
-                    <li>Navigate to <a href="chrome://extensions/">chrome://extensions/</a></li>
-                    <li></li>
-                </ol>
+                <span>
+                    <div id="text-wrapper">
+                        <h1 class="segoe project-title">TypeMeNot</h1>
+                        <div class="description-wrapper">
+                            <h4 class="align-left segoe project-description">A Chrome extension that checks for toxic characteristics in the<br> 
+                            text that you are composing for social media sites, in real time.
+                            </h4>
+                        </div>
+                        
+                        <h4 class="align-left segoe">Try it yourself:</h4>
+                        <ol>
+                            <li>Download the extension
+                                <a href="./images/Resume.pdf" download> here</a>
+                            </li>
+                            <li>Navigate to <code>chrome://extensions/</code></li>
+                            <li>Enable developer mode by using the toggle in the top right</li>
+                            <li>Click <code>Load unpacked</code> and select the extension</li>
+                            <li></li>
+                        </ol>
+                    </div>
+                    <div id="typemenot-gif">
+                        <p>test</p>
+                    </div>
+                </span>
+                
             </div>
             <!-- END PROJECTS-->
         </div>
     </div>
 </body>
-
 </html>

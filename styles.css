@@ -1,21 +1,30 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+@import url();
+
+@font-face {
+    font-family: 'Segoe UI';
+    src: url('/public/fonts/Segoe_UI.ttf') format('truetype');
+}
+
 .App {
   text-align: center;
-  background-color: #a5c0d2;
+  background-color: #ffffff;
   overflow-x: hidden;
   min-height: 100vh;
 }
 
 body {
-  background-color: #a5c0d2;
+  background-color: #ffffff;
 }
 
 .background {
-  background-color: #a5c0d2;
+  background-color: #ffffff;
 }
 
 #blurb-description {
   font-family: 'Roboto', sans-serif;
   font-weight: 300;
+  margin-bottom: 1vh;
 }
 
 .profile-photo {
@@ -27,7 +36,21 @@ body {
 }
 
 .roboto {
-  font-family: 'Roboto', sans-serif;
+  /* font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif
+    text-decoration: none; */
+
+}
+
+.segoe {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif
+    /* text-decoration: none; */
+}
+
+.name {
+  font-weight: 500;
+  font-size: 3em;
+  margin-top: -0.5vh;
+  margin-bottom: -0.5vh;
 }
 
 .App-header {
@@ -49,7 +72,7 @@ body {
   font-size: 20px;
   text-decoration: none;
   /* color: black; */
-  font-weight: 300;
+  font-weight: 700;
 }
 
 .resume-link-wrapper {
@@ -61,9 +84,13 @@ body {
   padding-left: 17em;
   font-size: 20px;
   text-decoration: none;
-  font-weight: 300;
+  font-weight: 500;
   /* border-bottom: 1px solid #a9aaa7 */
 }
+
+.remove-link {
+  text-decoration: none;
+} 
 
 a {
     text-decoration: none;
