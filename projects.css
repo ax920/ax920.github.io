@@ -11,15 +11,15 @@
 
 #text-wrapper {
     width: 70%;
-    border: 1px solid;
-    border-color: black;
+    /* border: 1px solid;
+    border-color: black; */
     float: left;
 }
 
 #typemenot-gif {
     width: 20%;
-    border: 1px solid;
-    border-color: black;
+    /* border: 1px solid;
+    border-color: black; */
     float: right;
 }
 
@@ -46,6 +46,7 @@ li {
     text-align: left;
     font-family: 'Roboto', sans-serif;
     font-weight: 300;
+    margin-bottom: 1vh;
 }
 
 a {
