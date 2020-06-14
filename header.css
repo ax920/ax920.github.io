@@ -1,55 +1,50 @@
 @import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
 
 .App-header {
-    /* background-color: #a5c0e1; */
-    height: 10vh;
-    width: 100%;
-    display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
-    font-size: calc(10px + 2vmin);
-  }
+  background-color: #00458B;
+  height: 7vh;
+  width: 100%;
+  margin: 0;
+  padding: 0;
+  /* font-size: calc(10px + 2vmin); */
+}
 
-  .home-link-wrapper {
-    grid-column: 1;
-    display: inline-block;
-  }
-  
-  .home-link {
-    padding-right: 18em;
-    font-size: 20px;
+.header-left {
+  margin-left: 2vw;
+  display: flex;
+  align-items: center;
+}
+
+.header-left a {
+  display: inline-block;
+  font-size: calc(1.75vmin);
+  text-decoration: none;
+  font-weight: 500;
+  margin-right: 1vw;
+  color: white;
+}
+
+a {
     text-decoration: none;
-    /* color: black; */
-    font-weight: 300;
-    font-family: 'Roboto', sans-serif;
-  }
-  
-  .resume-link-wrapper {
-    grid-column: 3;
-    display: inline-block;
-  }
-  
-  .resume-link {
-    padding-left: 17em;
-    font-size: 20px;
-    text-decoration: none;
-    font-weight: 300;
-    font-family: 'Roboto', sans-serif;
-    /* border-bottom: 1px solid #a9aaa7; */
-  }
+    color: black;
+}
 
-  .roboto {
-    font-family: 'Roboto', sans-serif;
-  }
+a:hover {
+  opacity: 0.50;
+}
 
-  a {
-      text-decoration: none;
-      color: black;
-  }
+a:active {
+  color: white;
+}
 
-  a:hover {
-    opacity: 0.50;
+/* TODO: ADD RESPONSIVENESS*/
+/* @media screen and (max-width: 500px) {
+  .header a {
+    float: none;
+    display: block;
+    text-align: left;
   }
-  
-  a:active {
-    color: white;
+  .header-right {
+    float: none;
   }
+} */

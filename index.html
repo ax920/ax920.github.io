@@ -21,78 +21,72 @@
 </script>
 
 <body>
+    <!-- HEADER -->
+    <header class="App-header">
+        <div class="header-left">
+            <a class="segoe" href="./index.html">Home</a>
+            <a class="segoe" href="./resume.html">Resume</a>
+        </div>
+    </header>
+    <!-- END HEADER -->
     <div class="App">
         <div class="background">
-            <!-- HEADER -->
-            <header class="App-header">
-                <div class="home-link-wrapper">
+            <div id="profile-photo-spacing"></div>
+            <div id="profile-wrapper">
+                <div id="profile-text">
+                    <h1 class="segoe name">Alvin Xu</h1>
+                    <h4 id="blurb-description" class="segoe">Computer Science Student <br> at the
+                    University of British Columbia</h4>
+                    <!--<SocialMedia-->
                     <div>
-                        <a class="segoe home-link" href="./index.html">Home</a>
+                        <a class="remove-link" href="https://www.linkedin.com/in/ax920/">
+                            <img class="social-media-icon" src="./images/icons/linkedin.png"></img>
+                        </a>
+                        <a class="remove-link" href="https://github.com/ax920/">
+                            <img class="social-media-icon" src="./images/icons/github.png"></img>
+                        </a>
+                        <a class="remove-link" href="mailto:alvin.xu@alumni.ubc.ca">
+                            <img class="social-media-icon" src="./images/icons/mail.png"></img>
+                        </a>
                     </div>
+                    <!-- END SOCIALMEDIA -->
                 </div>
-                <div></div>
-                <div class="resume-link-wrapper">
-                    <div>
-                        <a class="segoe resume-link"  href="./resume.html">Resume</a>
-                    </div>
-                </div>
-            </header>
-            <!-- END HEADER -->
-            <br></br>
-            <img class="profile-photo" src="./images/alvin_profile.png" alt="Avatar"></img>
-            <h1 class="segoe name" style="color: black;">Alvin Xu</h1>
-            <h4 id="blurb-description" class="segoe" style="color: black;">Computer Science Student at the
-                University of British Columbia</h4>
-            <!--<SocialMedia-->
-            <div>
-                <span>
-                    <a class="remove-link" href="https://www.linkedin.com/in/ax920/">
-                        <img class="social-media-icon" src="./images/icons/linkedin.png"></img>
-                    </a>
-                </span>
-                <span>
-                    <a class="remove-link" href="https://github.com/ax920/">
-                        <img class="social-media-icon" src="./images/icons/github.png"></img>
-                    </a>
-                </span>
-                <span>
-                    <a class="remove-link" href="mailto:alvin.xu@alumni.ubc.ca">
-                        <img class="social-media-icon" src="./images/icons/mail.png"></img>
-                    </a>
-                </span>
+                <img class="profile-photo" src="./images/alvin_profile.png" alt="Avatar"></img>
             </div>
-            <!-- END SOCIALMEDIA -->
+            
             <!-- BEGIN PROJECTS-->
             <div id="project-wrapper">
-                <span>
-                    <div id="text-wrapper">
-                        <h1 class="segoe project-title">TypeMeNot</h1>
-                        <div class="description-wrapper">
-                            <h4 class="align-left segoe project-description">A Chrome extension that checks for toxic characteristics in the<br> 
-                            text that you are composing for social media sites, in real time.
-                            </h4>
-                        </div>
-                        
-                        <h4 class="align-left segoe">Try it yourself:</h4>
-                        <ol>
-                            <li>Download the extension
-                                <a href="https://github.com/ax920/TypeMeNot/archive/master.zip" download> here</a>
-                            </li>
-                            <li>Navigate to <code>chrome://extensions/</code></li>
-                            <li>Enable developer mode by using the toggle in the top right</li>
-                            <li>Click <code>Load unpacked</code> and select the extension</li>
-                            <li>Navigate to a social media site such as Reddit or Twitter</li>
-                            <li>Select the extension in the top right toolbar, and start!</li>
-                            <li>Type away using expletives! (on second thought maybe not)</li>
-                        </ol>
+                <div id="text-wrapper">
+                    <h1 class="segoe project-title">TypeMeNot</h1>
+                    <h4 class="segoe" id="typemenot-blurb">— Winner of Wolfram Prize NwHacks 2020</h4>
+                    <div class="description-wrapper">
+                        <h4 class="align-left segoe project-description">A Chrome extension that checks for toxic characteristics in the<br> 
+                        text that you compose for social media sites, in real time.
+                        </h4>
                     </div>
-                    <div id="typemenot-gif">
-                        <p>insert gif</p>
-                    </div>
-                </span>
-                
+                    
+                    <h4 class="align-left segoe">Try it yourself:</h4>
+                    <ol>
+                        <li>Download the extension
+                            <a href="https://github.com/ax920/TypeMeNot/archive/master.zip" download> here</a>
+                        </li>
+                        <li>Navigate to <code>chrome://extensions/</code></li>
+                        <li>Enable developer mode by using the toggle in the top right</li>
+                        <li>Click <code>Load unpacked</code> and select the extension</li>
+                        <li>Navigate to a social media site such as Reddit or Twitter</li>
+                        <li>Select the extension in the top right toolbar, and start!</li>
+                        <li>Type away using expletives! (ok maybe not)</li>
+                    </ol>
+                </div>
+                <div id="typemenot-gif-wrapper">
+                    <!-- <video autoplay="autoplay" loop="loop" width="400" height="300"> -->
+                        <!-- <source src="public/typemenot-example.mp4" type="video/mp4" /> -->
+                        <img id="typemenot-gif" src="public/typemenot-example.gif" />
+                    <!-- </video> -->
+                </div>
             </div>
             <!-- END PROJECTS-->
+            <div style="height: 30vh;"></div>
         </div>
     </div>
 </body>
