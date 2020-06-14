@@ -37,8 +37,7 @@ body {
 
 #blurb-description {
   margin-top: 0;
-  font-family: 'Roboto', sans-serif;
-  font-weight: 300;
+  font-weight: 600;
   color: #495057;
 }
 
@@ -132,6 +131,10 @@ a:active {
 .social-media-icon {
   width: 5%;
   height: 5%;
+}
+
+#socialmedia-spacing a {
+  margin-right: 0.35vw;
 }
 
 span + span {
