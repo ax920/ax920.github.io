@@ -14,6 +14,7 @@
     /* border: 1px solid;
     border-color: black; */
     float: left;
+    width: 50%;
 }
 
 #typemenot-gif-wrapper {
@@ -42,6 +43,7 @@
     text-align: left;
     font-size: 4em;
     margin-bottom: 0vh;
+    font-weight: 500;
 }
 
 .project-description {
@@ -51,14 +53,14 @@
 }
 
 .description-wrapper {
-
+    
 }
 
 li {
     text-align: left;
-    font-family: 'Roboto', sans-serif;
     font-weight: 300;
     margin-bottom: 1vh;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
 
 a {
