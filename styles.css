@@ -1,9 +1,22 @@
-@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
-@import url();
-
 @font-face {
     font-family: 'Segoe UI';
-    src: url('/public/fonts/Segoe_UI.ttf') format('truetype');
+    src: url('/public/fonts/Segoe_UI.ttf') format('truetype'),
+         url('/public/fonts/Segoe\ UI.woff') format('woff');
+}
+
+@font-face {
+  font-family: 'Segoe UI Bold';
+  src: url('/public/fonts/Segoe\ UI\ Bold.ttf') format('truetype');
+}
+
+@font-face {
+  font-family: 'Segoe UI Italic';
+  src: url('/public/fonts/Segoe\ UI\ Italic.ttf') format('truetype');
+}
+
+@font-face {
+  font-family: 'Segoe UI Bold Italic';
+  src: url('/public/fonts/Segoe\ UI\ Bold\ Italic.ttf') format('truetype');
 }
 
 body {
@@ -65,7 +78,7 @@ body {
 }
 
 .segoe {
-  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
 
 .name {
