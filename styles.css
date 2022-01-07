@@ -233,6 +233,10 @@ hr {
   margin-top: 1%;
 }
 
+.project-text {
+  line-height: 1.5;
+}
+
 .debug {
   border: 1px solid;
   border-color: black;
