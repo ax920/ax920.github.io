@@ -1,23 +1,290 @@
-@font-face {
-    font-family: 'Segoe UI';
-    src: url('./public/fonts/Segoe_UI.ttf') format('truetype'),
-         url('./public/fonts/Segoe\ UI.woff') format('woff');
+body {
+  margin: 0;
+  cursor: none !important;
+  font-family: 'DM Sans', sans-serif;
+  background: #543F87;
 }
 
-@font-face {
-  font-family: 'Segoe UI Bold';
-  src: url('/public/fonts/Segoe\ UI\ Bold.ttf') format('truetype');
+.cursor {
+  width: 17px;
+  height: 17px;
+  background-color: white;
+  opacity: 70%;
+  border: 1px solid white;
+  border-radius: 50%;
+  position: absolute;
+  transition-duration: 200ms;
+  transition-timing-function: ease-out;
+  z-index: 100;
+  pointer-events: none;
 }
 
-@font-face {
-  font-family: 'Segoe UI Italic';
-  src: url('/public/fonts/Segoe\ UI\ Italic.ttf') format('truetype');
+a {
+  cursor: none;
 }
 
-@font-face {
-  font-family: 'Segoe UI Bold Italic';
-  src: url('/public/fonts/Segoe\ UI\ Bold\ Italic.ttf') format('truetype');
+p {
+  font-size: 18px;
 }
+
+h1 {
+  font-size: 50px;
+  margin: 0;
+  padding: 0;
+}
+
+hr {
+  width: 35%;
+  display: block;
+  margin: 3% 0;
+  border-color: #B66EA2;
+  border-width: 0.5px;
+  border-style: solid;
+}
+
+#sidebar {
+  position: fixed;
+  height: 150vh;
+  width: 18%;
+  background-color: #EB913A;
+  z-index: 98;
+  -webkit-transition: all 0.5s ease;
+  -moz-transition: all 0.5s ease;
+  -o-transition: all 0.5s ease;
+  transition: all 0.5s ease;
+}
+
+.sidebar-toggle #sidebar {
+  -webkit-transform: translateX(200px);
+  transform: translateX(200px);
+}
+
+.sidebar-links-wrapper {
+  margin: 50% 20% 20% 20%;
+}
+
+.sidebar-link {
+  font-size: 1.75vw;
+  margin: 30% 0;
+}
+
+.about-me-wrapper {
+  height: 100vh;
+}
+
+.about-me-text-wrapper {
+  position: relative;
+  margin: 0 auto 10%;
+  padding-top: 10%;
+  width: 60%;
+  z-index: 98;
+}
+
+.about-hi-there {
+  color: white;
+}
+
+.about-text {
+  color: white;
+}
+
+.experience-wrapper {
+  width: 100%;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  flex-direction: column;
+}
+
+.experience-text-wrapper {
+  position: relative;
+  width: 60%;
+  left: 0; 
+  right: 0;
+  margin: 0 auto 10%;
+  z-index: 98;
+}
+
+.experience-text-wrapper * {
+  color: white;
+}
+
+.exp-subtext-wrapper {
+  display: flex;
+  flex-direction: column;
+}
+
+.exp-title {
+  margin-bottom: 10%;
+}
+
+.exp-l1, .exp-l2 {
+  display: flex;
+  align-items: baseline;
+  justify-content: space-between;
+  margin-bottom: 1%;
+}
+
+.exp-l1 * {
+  margin: 0;
+  padding: 0;
+}
+
+.exp-l2 * {
+  margin: 0;
+  padding: 0;
+  font-style: italic;
+}
+
+.exp-company {
+  font-size: 32px;
+  margin-top: 5%;
+}
+
+.exp-location {
+  font-size: 18px;
+}
+
+.exp-position {
+  font-size: 24px;
+}
+
+.exp-date {
+  font-size: 18px;
+}
+
+.exp-bullet-list {
+  padding: 0;
+  margin: 0 0 0 24px;
+}
+
+.exp-bullet {
+  margin: 5px 0;
+  font-size: 18px;
+  padding: 0;
+}
+
+.projects-wrapper {
+  width: 100%;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  flex-direction: column;
+}
+
+.project-wrapper {
+  margin: 10% 0;
+}
+
+.projects-text-wrapper {
+  position: relative;
+  width: 60%;
+  left: 0; 
+  right: 0;
+  margin: 10% auto 10%;
+  z-index: 98;
+}
+
+.projects-text-wrapper * {
+  color: white;
+}
+
+.projects-title {
+  margin-bottom: 10%;
+}
+
+.projects-name {
+  font-size: 32px;
+  margin-bottom: 0;
+}
+
+.proj-view-btn {
+  width: 165px;
+  height: 35px;
+  text-align: center;
+  background-color: #B66EA2;
+  color: white;
+  line-height: 35px;
+  position: relative;
+}
+
+.proj-link {
+  position: absolute; 
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  z-index: 1;
+}
+
+.proj-view-btn * {
+  margin: auto;
+  color: white;
+}
+
+.projects-tech {
+  font-style: italic;
+  font-weight: 300;
+  margin-top: 1%;
+}
+
+.debug {
+  border: 1px solid;
+  border-color: black;
+}
+
+@keyframes blur {
+  to {
+    -webkit-filter: blur(5px);
+    -moz-filter:    blur(5px);
+    -o-filter:      blur(5px);
+    -ms-filter:     blur(5px);
+  }
+  
+}
+
+/* fadeInUp animation */
+
+@keyframes fadeInUp {
+  from {
+      transform: translate3d(0,40px,0)
+  }
+
+  to {
+      transform: translate3d(0,0,0);
+      opacity: 1
+  }
+}
+
+@-webkit-keyframes fadeInUp {
+  from {
+      transform: translate3d(0,40px,0)
+  }
+
+  to {
+      transform: translate3d(0,0,0);
+      opacity: 1
+  }
+}
+
+.animated {
+  animation-duration: 1s;
+  animation-fill-mode: both;
+  -webkit-animation-duration: 1s;
+  -webkit-animation-fill-mode: both
+}
+
+.animatedFadeInUp {
+  opacity: 0
+}
+
+.fadeInUp {
+  opacity: 0;
+  animation-name: fadeInUp;
+  -webkit-animation-name: fadeInUp;
+}
+
+/* old fade in animation */
 
 .fade-in-animation {
     -webkit-animation: fadein 2s; /* Safari, Chrome and Opera > 12.1 */
@@ -55,154 +322,3 @@
     from { opacity: 0; }
     to   { opacity: 1; }
 }
-
-body {
-  margin: 0;
-  padding: 0;
-}
-
-.App {
-  text-align: center;
-  background-color: #ffffff;
-  overflow-x: hidden;
-  min-height: 100vh;
-}
-
-body {
-  background-color: #ffffff;
-}
-
-.background {
-  background-color: #ffffff;
-}
-
-#profile-wrapper {
-  margin-left: 30vh;
-  margin-right: 30vh;
-  display: flex;
-  align-items: center;
-  /* border: 1px solid;
-    border-color: black; */
-}
-
-#blurb-description {
-  margin-top: 0;
-  font-weight: 600;
-  color: #495057;
-}
-
-.test {
-  border: 1px solid;
-    border-color: black;
-}
-
-#profile-text {
-  width: 30%;
-  margin-left: 13vw;
-  /* border: 1px solid; */
-    /* border-color: black; */
-}
-
-.profile-photo {
-  border-radius: 50%;
-  width: 25%;
-  height: 25%;
-  margin-left: 5vw;
-}
-
-#profile-photo-spacing {
-  margin-top: 10vh;
-}
-
-.segoe {
-  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-}
-
-.name {
-  color: black;
-  font-weight: 500;
-  font-size: 3em;
-  /* margin-top: -0.5vh; */
-  margin-bottom: 0.5vh;
-}
-
-.App-header {
-  /* background-color: #a5c0e1; */
-  height: 10vh;
-  width: 100%;
-  display: grid;
-  grid-template-columns: 1fr 1fr 1fr;
-  font-size: calc(10px + 2vmin);
-}
-
-.home-link-wrapper {
-  grid-column: 1;
-  display: inline-block;
-}
-
-.home-link {
-  padding-right: 18em;
-  font-size: 20px;
-  text-decoration: none;
-  /* color: black; */
-  font-weight: 700;
-}
-
-.resume-link-wrapper {
-  grid-column: 3;
-  display: inline-block;
-}
-
-.resume-link {
-  padding-left: 17em;
-  font-size: 20px;
-  text-decoration: none;
-  font-weight: 500;
-  /* border-bottom: 1px solid #a9aaa7 */
-}
-
-.remove-link {
-  text-decoration: none;
-} 
-
-a {
-    text-decoration: none;
-    color: black;
-}
-
-a:hover {
-  opacity: 0.50;
-}
-
-a:active {
-  color: white;
-}
-
-.social-media-icon {
-  width: 5%;
-  height: 5%;
-}
-
-#socialmedia-spacing a {
-  margin-right: 0.35vw;
-}
-
-span + span {
-  margin-left: 10px;
-}
-
-/* Sample animation css for spinning React logo */
-/* @media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-} */
-
-/* @keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
-} */
