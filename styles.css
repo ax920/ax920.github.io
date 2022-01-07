@@ -46,6 +46,7 @@ hr {
   position: fixed;
   height: 150vh;
   width: 18%;
+  padding-top: 5%;
   background-color: #EB913A;
   z-index: 98;
   -webkit-transition: all 0.5s ease;
@@ -61,6 +62,10 @@ hr {
 
 .sidebar-links-wrapper {
   margin: 50% 20% 20% 20%;
+}
+
+.sidebar-link-wrapper {
+  margin: 0;
 }
 
 .sidebar-link {

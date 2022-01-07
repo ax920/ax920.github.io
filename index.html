@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
   <head>
-    <link rel="icon" type="image/png" href="/public/favicon.ico" />
+    <link rel="icon" type="image/png" href="public/favicon.ico" />
     <link rel="stylesheet" href="styles.css" />
     <link rel="stylesheet" href="header.css" />
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -43,14 +43,20 @@
     <!-- HEADER END -->
     <div id="sidebar">
       <div class="sidebar-links-wrapper">
-        <h3 class="sidebar-link">About</h3>
-        <h3 class="sidebar-link">Experience</h3>
-        <h3 class="sidebar-link">Projects</h3>
+        <div class="sidebar-link-wrapper" onclick="scrollToAbout()">
+          <h3 class="sidebar-link">About</h3>
+        </div>
+        <div class="sidebar-link-wrapper" onclick="scrollToExperience()">
+          <h3 class="sidebar-link">Experience</h3>
+        </div>
+        <div class="sidebar-link-wrapper" onclick="scrollToProjects()">
+          <h3 class="sidebar-link">Projects</h3>
+        </div>
       </div>
     </div>
     <!-- CONTENT START -->
     <div class="content-wrapper">
-      <div class="about-me-wrapper">
+      <div class="about-me-wrapper" id="about-me">
         <div class="about-me-text-wrapper animated animatedFadeInUp fadeInUp">
           <h1 class="about-hi-there">Hi there, I'm Alvin</h1>
           <hr>
@@ -61,7 +67,7 @@
           <p class="about-text">In my spare time you can catch me playing squash, soccer, spikeball, basketball... I love all sports. I also really enjoy listening to music, especially jazz, hiphop, and rock, but I listen to all types of music!</p>
         </div>
       </div>
-      <div class="experience-wrapper">
+      <div class="experience-wrapper" id="experience">
         <div class="experience-text-wrapper">
           <h1 id="exp-title" class="animated animatedFadeInUp fadeInUp">Experience</h1>
           <div class="exp-subtext-wrapper animated animatedFadeInUp fadeInUp">
@@ -81,7 +87,7 @@
               <li class="exp-bullet">Participated in discussions with internal stakeholders on ways to improve the application, and creating the corresponding issues in Zenhub. </li>
             </ul>
           </div>
-          <div class="exp-subtext-wrapper animated animatedFadeInUp fadeInUp">
+          <div class="exp-subtext-wrapper animated animatedFadeInUp fadeInUp" >
             <div class="exp-l1">
               <h3 class="exp-company">AnalysisWorks</h3>
               <h3 class="exp-location">Vancouver, BC</h3>
@@ -100,7 +106,7 @@
           </div>
         </div>
       </div>
-      <div class="projects-wrapper">
+      <div class="projects-wrapper" id="projects">
         <div class="projects-text-wrapper animated animatedFadeInUp fadeInUp">
           <h1 class="projects-title">Projects</h1>
           <div class="project-wrapper">
@@ -151,6 +157,18 @@
         "left: " + "-20%"
       );
       }
+    }
+    function scrollToAbout() {
+      elem = document.getElementById("about-me");
+      elem.scrollIntoView({behavior: "smooth"});
+    }
+    function scrollToExperience() {
+      elem = document.getElementById("experience");
+      elem.scrollIntoView({behavior: "smooth"});
+    }
+    function scrollToProjects() {
+      elem = document.getElementById("projects");
+      elem.scrollIntoView({behavior: "smooth"});
     }
     document.querySelectorAll('a[href^="#"]').forEach((anchor) => {
       anchor.addEventListener("click", function (e) {
