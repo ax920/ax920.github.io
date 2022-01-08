@@ -74,7 +74,8 @@ hr {
 }
 
 .about-me-wrapper {
-  height: 100vh;
+  min-height: 100vh;
+  height: auto;
 }
 
 .about-me-text-wrapper {
