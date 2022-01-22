@@ -1,9 +1,12 @@
 <!DOCTYPE html>
 <html>
   <head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Alvin Xu</title>
     <link rel="icon" type="image/png" href="public/favicon.ico" />
     <link rel="stylesheet" href="styles.css" />
     <link rel="stylesheet" href="header.css" />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.7.2/font/bootstrap-icons.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=DM+Sans&display=swap" rel="stylesheet">
@@ -16,26 +19,20 @@
     <!-- HEADER START-->
     <header class="app-header">
       <div class="header-wrapper">
-        <span class="hamburger-container" onclick="toggleHamburgerMenu(this)">
+        <span class="hamburger-container" onclick="toggleHamburgerMenu()">
           <div class="bar1"></div>
           <div class="bar2"></div>
           <div class="bar3"></div>
         </span>
         <div class="icons-wrapper">
           <a href="mailto:alvin.xu920@gmail.com" class="icon-link">
-            <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor" class="icon bi bi-envelope" viewBox="0 0 20 20">
-              <path d="M0 4a2 2 0 0 1 2-2h12a2 2 0 0 1 2 2v8a2 2 0 0 1-2 2H2a2 2 0 0 1-2-2V4Zm2-1a1 1 0 0 0-1 1v.217l7 4.2 7-4.2V4a1 1 0 0 0-1-1H2Zm13 2.383-4.708 2.825L15 11.105V5.383Zm-.034 6.876-5.64-3.471L8 9.583l-1.326-.795-5.64 3.47A1 1 0 0 0 2 13h12a1 1 0 0 0 .966-.741ZM1 11.105l4.708-2.897L1 5.383v5.722Z"/>
-            </svg>
+            <span class="icon bi-envelope"></span>
           </a>
-          <a href="ttps://github.com/ax920" class="icon-link">
-            <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor" class="icon bi bi-github" viewBox="0 0 20 20">
-              <path d="M8 0C3.58 0 0 3.58 0 8c0 3.54 2.29 6.53 5.47 7.59.4.07.55-.17.55-.38 0-.19-.01-.82-.01-1.49-2.01.37-2.53-.49-2.69-.94-.09-.23-.48-.94-.82-1.13-.28-.15-.68-.52-.01-.53.63-.01 1.08.58 1.23.82.72 1.21 1.87.87 2.33.66.07-.52.28-.87.51-1.07-1.78-.2-3.64-.89-3.64-3.95 0-.87.31-1.59.82-2.15-.08-.2-.36-1.02.08-2.12 0 0 .67-.21 2.2.82.64-.18 1.32-.27 2-.27.68 0 1.36.09 2 .27 1.53-1.04 2.2-.82 2.2-.82.44 1.1.16 1.92.08 2.12.51.56.82 1.27.82 2.15 0 3.07-1.87 3.75-3.65 3.95.29.25.54.73.54 1.48 0 1.07-.01 1.93-.01 2.2 0 .21.15.46.55.38A8.012 8.012 0 0 0 16 8c0-4.42-3.58-8-8-8z"/>
-            </svg>
+          <a href="https://github.com/ax920" class="icon-link">
+            <span class="icon bi-github"></span>
           </a>
-          <a href="https://www.linkedin.com/in/ax920/" class="icon-link">
-            <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor" class="icon bi bi-linkedin" viewBox="0 0 20 20">
-              <path d="M0 1.146C0 .513.526 0 1.175 0h13.65C15.474 0 16 .513 16 1.146v13.708c0 .633-.526 1.146-1.175 1.146H1.175C.526 16 0 15.487 0 14.854V1.146zm4.943 12.248V6.169H2.542v7.225h2.401zm-1.2-8.212c.837 0 1.358-.554 1.358-1.248-.015-.709-.52-1.248-1.342-1.248-.822 0-1.359.54-1.359 1.248 0 .694.521 1.248 1.327 1.248h.016zm4.908 8.212V9.359c0-.216.016-.432.08-.586.173-.431.568-.878 1.232-.878.869 0 1.216.662 1.216 1.634v3.865h2.401V9.25c0-2.22-1.184-3.252-2.764-3.252-1.274 0-1.845.7-2.165 1.193v.025h-.016a5.54 5.54 0 0 1 .016-.025V6.169h-2.4c.03.678 0 7.225 0 7.225h2.4z"/>
-            </svg>
+          <a href="https://linkedin.com/in/ax920" class="icon-link">
+            <span class="icon bi-linkedin"></span>
           </a>
         </div>
       </div>
@@ -55,15 +52,18 @@
       </div>
     </div>
     <!-- CONTENT START -->
-    <div class="content-wrapper">
+    <div class="container">
       <div class="about-me-wrapper" id="about-me">
         <div class="about-me-text-wrapper animated animatedFadeInUp fadeInUp">
           <h1 class="about-hi-there">Hi there, I'm Alvin</h1>
           <hr>
           <p class="about-text">A fourth-year Computer Science student at the University of British Columbia.</p>
+          <br>
           <p class="about-text">I'm passionate about Software Development, Web Development, 
             UI/UX Design, and creating software that is both functional and usable.</p>
+          <br>
           <p class="about-text">I'm most recently a Full-stack Web Development Intern at Logibec, where I worked primarily with Angular and Node.js.</p>
+          <br>
           <p class="about-text">In my spare time you can catch me playing squash, soccer, spikeball, basketball... I love all sports. I also really enjoy listening to music, especially jazz, hiphop, and rock, but I listen to all types of music!</p>
         </div>
       </div>
@@ -114,12 +114,13 @@
             <h4 class="projects-tech">Python • Selenium WebDriver • Twilio</h4>
             <hr>
             <p class="project-text">It’s COVID, and at the UBC campus gyms, there was a capacity limit of 25 people. You were required to book a session using an online software, which was problematic - bookings for a session would open 48 hours in advance at noon. The entire campus would be scrambling to make bookings, resulting in the entire day being booked out within one minute. If you weren’t fast enough or in class, there would be no workout for that day :(. Clearly, there needed to be a solution.</p>
+            <br>
             <p class="project-text">I built a simple python web scraper that logs into the online booking software and sends you a list of open bookings through SMS (using the Twilio API), due to someone cancelling their booking. I deliberately chose SMS because it’s a high-priority interface - the likelihood of someone checking their phone and seeing a text message with available openings is higher than say, an app or email.</p>
+            <br>
             <p class="project-text">I liked this project because I gave it to my close friends to use, and they actually found it to be useful. This was my first experience building something that had real users!</p>
             <div class="proj-view-btn">
               View on Github
-              <a href="https://github.com/ax920/Gym-Availability">
-                <span class="proj-link"></span>
+              <a href="https://github.com/ax920/Gym-Availability" class="proj-link">
               </a>
             </div>
           </div>
@@ -128,12 +129,13 @@
             <h4 class="projects-tech">Javascript • Node.js • Chrome extension • Google Perspective API</h4>
             <hr>
             <p class="project-text">This project was built at NwHacks 2020. It was inspired by the many hateful and rude comments that can be found on platforms such as YouTube, Twitter, Reddit, etc., as well as the idea that it might even be you yourself who is making such comments without knowing it. The motivation for this project was that if the user could be warned that their comment is potentially harmful or toxic, then they would be less inclined to actually post it.</p>
+            <br>
             <p class="project-text">We chose to implement this project in the form of a Chrome extension so that we could easily support a variety of websites. The extension takes the text from the textbox that the user is typing in and feeds it to a Node.js instance, which is then fed to Google’s Perspective API. This API returns a float value from 0.00 - 1.00, corresponding to the “toxicity” of the text it was given. Sentences that included swears and hateful comments return a higher value.</p>
+            <br>
             <p class="project-text">We then decided a threshold value where any score for a given sentence greater than this threshold is considered too toxic for the sake of the Internet. In this case, the user is alerted with a popup message.</p>
             <div class="proj-view-btn">
               View on Github
-              <a href="https://github.com/ax920/TypeMeNot">
-                <span class="proj-link"></span>
+              <a href="https://github.com/ax920/TypeMeNot" class="proj-link">
               </a>
             </div>
           </div>
@@ -142,34 +144,70 @@
     </div>
   </body>
   <script>
-    document.getElementById("sidebar").style.left = "-20%";
-    function toggleHamburgerMenu(x) {
-      x.classList.toggle("change");
+    const width = parseInt(window.screen.width, 10);
+    if (width <= 480) {
+      document.getElementById("sidebar").style.left = "-100%";
+    } else {
+      document.getElementById("sidebar").style.left = "-50%";
+    }
+
+    function toggleHamburgerMenu() {
+      const div = document.getElementsByClassName("hamburger-container")[0];
+      const width = parseInt(window.screen.width, 10);
+      div.classList.toggle("change");
       let sidebar = document.querySelector("#sidebar");
-      if (sidebar.style.left == "-20%") {
-        sidebar.setAttribute(
-        "style",
-        "left: " + "0%"
-      );
+      if (width < 480) {
+        if (sidebar.style.left == "-100%") {
+          sidebar.setAttribute(
+          "style",
+          "left: " + "0%"
+          );
+        } else {
+          sidebar.setAttribute(
+          "style",
+          "left: " + "-100%"
+          );
+        }
       } else {
-        sidebar.setAttribute(
-        "style",
-        "left: " + "-20%"
-      );
+        if (sidebar.style.left == "-50%") {
+          sidebar.setAttribute(
+          "style",
+          "left: " + "0%"
+          );
+        } else {
+          sidebar.setAttribute(
+          "style",
+          "left: " + "-50%"
+          );
+        }
       }
     }
+
     function scrollToAbout() {
       elem = document.getElementById("about-me");
       elem.scrollIntoView({behavior: "smooth"});
+      const width = parseInt(window.screen.width, 10);
+      if (width < 480) {
+        toggleHamburgerMenu();
+      }
     }
     function scrollToExperience() {
       elem = document.getElementById("experience");
       elem.scrollIntoView({behavior: "smooth"});
+      const width = parseInt(window.screen.width, 10);
+      if (width < 480) {
+        toggleHamburgerMenu();
+      }
     }
     function scrollToProjects() {
       elem = document.getElementById("projects");
       elem.scrollIntoView({behavior: "smooth"});
+      const width = parseInt(window.screen.width, 10);
+      if (width < 480) {
+        toggleHamburgerMenu();
+      }
     }
+
     document.querySelectorAll('a[href^="#"]').forEach((anchor) => {
       anchor.addEventListener("click", function (e) {
         e.preventDefault();
