@@ -54,6 +54,7 @@
 /* Fade out the second bar */
 .change .bar2 {
   opacity: 0;
+  background-color: black;
 }
 
 /* Rotate last bar */
