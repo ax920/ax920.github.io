@@ -78,7 +78,7 @@
   }
 
   .bar1, .bar2, .bar3 {
-    transition: 1s;
+    transition: 0.6s;
   }
 
   .icon {
