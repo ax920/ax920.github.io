@@ -171,7 +171,7 @@ hr {
 }
 
 .project-wrapper {
-  margin: 10% 0;
+  margin-top: 5%;
 }
 
 .projects-text-wrapper {
@@ -184,9 +184,9 @@ hr {
   color: white;
 }
 
-.projects-title {
+/* .projects-title {
   margin-bottom: 10%;
-}
+} */
 
 .projects-name {
   font-size: 32px;
